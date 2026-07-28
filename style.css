@@ -1,0 +1,336 @@
+/* Google Font */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f5f5;
+    color:#222;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    height:70vh;
+    background:url("images/haircut_jpg.webp") center center/cover no-repeat;
+    position:relative;
+}
+
+.overlay{
+    background:rgba(0,0,0,.65);
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.overlay h1{
+    font-size:52px;
+    color:#FFD700;
+    margin-bottom:15px;
+}
+
+.overlay p{
+    font-size:22px;
+    margin-bottom:25px;
+}
+
+#search{
+    width:90%;
+    max-width:420px;
+    padding:15px 20px;
+    border:none;
+    border-radius:50px;
+    font-size:17px;
+    outline:none;
+}
+
+/* ================= CATEGORY ================= */
+
+.categories{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    padding:25px;
+    background:white;
+    position:sticky;
+    top:0;
+    z-index:100;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.categories button{
+    border:none;
+    background:#111;
+    color:white;
+    padding:12px 25px;
+    border-radius:40px;
+    cursor:pointer;
+    transition:.3s;
+    font-size:16px;
+}
+
+.categories button:hover{
+    background:#FFD700;
+    color:black;
+    transform:translateY(-3px);
+}
+
+/* ================= MENU ================= */
+
+.menu{
+    max-width:1000px;
+    margin:60px auto;
+    padding:20px;
+}
+
+.menu h2{
+    font-size:34px;
+    margin-bottom:30px;
+    color:#111;
+}
+
+/* ================= CARD ================= */
+
+.card{
+    background:white;
+    border-radius:18px;
+    padding:20px;
+    margin-bottom:25px;
+    display:flex;
+    align-items:center;
+    gap:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+    transition:.35s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 30px rgba(0,0,0,.18);
+}
+
+.card h3{
+    font-size:24px;
+    margin-bottom:8px;
+}
+
+.card p{
+    color:#666;
+}
+
+.price{
+    background:#FFD700;
+    color:black;
+    padding:15px 22px;
+    border-radius:40px;
+    font-weight:bold;
+    font-size:20px;
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.contact h2{
+    color:#FFD700;
+    margin-bottom:25px;
+}
+
+.contact p{
+    margin:12px;
+    font-size:18px;
+}
+
+.call{
+    display:inline-block;
+    margin-top:25px;
+    text-decoration:none;
+    background:#FFD700;
+    color:black;
+    padding:15px 35px;
+    border-radius:40px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.call:hover{
+    background:white;
+}
+
+/* ================= WHATSAPP ================= */
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:25px;
+    background:#25D366;
+    color:white;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+    text-decoration:none;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+}
+
+/* ================= TOP BUTTON ================= */
+
+#topBtn{
+    position:fixed;
+    left:20px;
+    bottom:25px;
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:#FFD700;
+    font-size:22px;
+    cursor:pointer;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+.overlay h1{
+    font-size:34px;
+}
+
+.overlay p{
+    font-size:18px;
+}
+
+.card{
+    flex-direction:column;
+    text-align:center;
+}
+
+.price{
+    margin-top:18px;
+}
+
+.menu h2{
+    font-size:28px;
+}
+
+.categories{
+    gap:10px;
+}
+
+.categories button{
+    font-size:14px;
+    padding:10px 18px;
+}
+
+}
+/* ================= SERVICE CARD IMAGE ================= */
+
+.card img{
+    width:140px;
+    height:140px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+/* ================= SERVICE INFO ================= */
+
+.info{
+    flex:1;
+}
+
+.badge{
+    display:inline-block;
+    background:#FFD700;
+    color:black;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.duration{
+    color:#777;
+    margin-top:8px;
+    font-weight:500;
+}
+/* ================= WHY CHOOSE US ================= */
+
+.why{
+    padding:70px 20px;
+    background:white;
+}
+
+.why h2{
+    text-align:center;
+    font-size:38px;
+    margin-bottom:50px;
+    color:#111;
+}
+
+.features{
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.feature{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+
+    transition:.35s;
+
+}
+
+.feature:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.icon{
+
+    font-size:55px;
+
+    margin-bottom:15px;
+
+}
+
+.feature h3{
+
+    margin-bottom:15px;
+
+}
+
+.feature p{
+
+    color:#666;
+
+}
